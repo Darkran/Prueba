@@ -1,0 +1,7 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Editar{% endblock %}
+{% block body %}
+    {{ form(form) }}
+     <a  class="button" href="{{ path('user_showAll') }}">Volver</a>
+{% endblock %}

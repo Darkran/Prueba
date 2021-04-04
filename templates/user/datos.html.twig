@@ -1,0 +1,27 @@
+{# Body block where child views will appear #}
+{% extends "base.html.twig" %}
+
+{% block title %}Usuarios{% endblock %}
+{% block body %}
+    <div id="data">Loading...</div>
+
+    <div>
+        <a class="button" href="{{ path('crud_index') }}">Atras</a>
+        <a class="button"href="{{ path('form_new_user') }}">Nuevo Usuario</a>
+    </div>
+{% endblock %}
+
+
+
+{# 
+    Create the javascripts blocks where all the scripts written in the child views
+    should appear really
+#}
+{% block javascripts %}   
+    <script src="{{ asset('bundles/datatables/js/datatables.js') }}"></script>
+    <script>
+        $(function () {
+            $('#data').initDataTables({{ datatable_settings(datatable) }}, {searching: true});
+        });
+    </script>
+{% endblock %}

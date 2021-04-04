@@ -1,0 +1,10 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Eliminar{% endblock %}
+{% block body %}
+    <div>¿Estas seguro de que quieres eliminar el usuario con id {{ id }}?</div>
+    <div>
+        <a href="{{ path('user_showAll') }}" class="button1">Volver</a>
+        <a href="{{ path('delete_user', {id: id }) }}" class="button1">Eliminar</a>
+    </div>
+{% endblock %}

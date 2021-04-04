@@ -1,0 +1,10 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Eliminar{% endblock %}
+{% block body %}
+    <div>¿Estas seguro de que quieres eliminar el sector con id {{ id }}?</div>
+    <div>
+        <a href="{{ path('sector_showAll') }}" class="button1">Volver</a>
+        <a href="{{ path('delete_sector', {id: id }) }}" class="button1">Eliminar</a>
+    </div>
+{% endblock %}

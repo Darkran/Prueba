@@ -1,0 +1,7 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Nueva Empresa{% endblock %}
+{% block body %}
+    {{ form(form) }}
+    <a class="button" href="{{ path('empresa_showAll') }}">Volver</a>
+{% endblock %}

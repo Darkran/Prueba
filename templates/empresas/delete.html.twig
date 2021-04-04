@@ -1,0 +1,10 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Eliminar{% endblock %}
+{% block body %}
+    <div>¿Estas seguro de que quieres eliminar la empresa con id {{ id }}?</div>
+    <div>
+        <a href="{{ path('empresa_showAll') }}" class="button1">Volver</a>
+        <a href="{{ path('delete_empresa', {id: id }) }}" class="button1">Eliminar</a>
+    </div>
+{% endblock %}

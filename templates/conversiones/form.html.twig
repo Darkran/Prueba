@@ -1,0 +1,11 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+{% block title %}Convertir{% endblock %}
+{% block body %}
+    {% if not mensaje == null %}
+        <p>Error al convertir la moneda</p>      
+    {% endif %}
+
+    {{ form(form) }}
+    <a class="button" href="{{ path('crud_index') }}">Volver</a>
+{% endblock %}

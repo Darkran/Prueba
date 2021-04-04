@@ -1,0 +1,21 @@
+{# templates/crud/inicio.html.twig #}
+{% extends "base.html.twig" %}
+{% block title %}Index{% endblock %}
+{% block body %}
+    <div>
+
+        <a class="button" href="{{ path('empresa_showAll') }}">Empresas</a>
+        {% if is_granted('ROLE_ADMIN') %}
+            <a class="button" href="{{ path('sector_showAll') }}">Sectores</a>
+            <a class="button" href="{{ path('user_showAll') }}">Usuarios</a>
+        {% endif %}
+
+
+    </div>
+
+    <div>
+        <a class="button" href="{{ path('convert') }}">Convertir monedas</a>
+        <a class="button" href="{{ path('app_logout') }}">Logout</a>
+
+    </div>
+{% endblock %}
