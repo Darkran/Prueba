@@ -19,4 +19,5 @@ El usuario de phpmyadmin es root, no tiene contraseña, hay que importar el fich
 Hay dos usuarios en la aplicacion
 dummy@user.com - pass: dummyUser
 dummy@admin.com - pass: dummyAdmin
+
 Cada uno tiene diferentes permisos.
