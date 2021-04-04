@@ -131,7 +131,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `roles`, `password`) VALUES
-(21, 'dummy@user.com', '[\"ROLE_USER\"]', '$argon2id$v=19$m=65536,t=4,p=1$S3BPSzBhS0tHOHQ5NG9uZQ$yoYijtYh1eesYnisciPTe5flLLDCrE2FNhPsgsEacR8'),
+(21, 'dummy@user.com', '[\"ROLE_USER\"]', '$argon2id$v=19$m=65536,t=4,p=1$h23euWQJUpJZ1+pKpxAMvw$T9+oB63PpLlZZZ7rQ5a07bNnPKccFcTx3Y6Xc0HYPeo'),
 (22, 'dummy@admin.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$Z2lKZTJGOUhaeUtTbk9FVw$FTYI+wqA07No9AzeXN2R3L4UIRPjXfxC5wxxMGWhT9Q'),
 (23, 'prueba@prueba.com', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$TjYxOFJ4ektlZ2M1NHMyNQ$oKMOknKH6yMRvd6MsdMFmAQO9iL6QvMJ8mZcDdZf1bM');
 
