@@ -1,14 +1,11 @@
 # Prueba
 Instalacion
 
-1º- Clonar el repositorio - 
-git clone https://github.com/Darkran/Prueba.git
+1º- Clonar el repositorio:  git clone https://github.com/Darkran/Prueba.git
 
-2º- Ejecutar composer - 
-composer update
+2º- Ejecutar composer:  composer update
 
-3º Ejecutar docker
-docker-compose up
+3º Ejecutar docker: docker-compose up
 
 4º Se puede entrar a la pagina con http://localhost/login o http://192.168.2.2/login 
 
