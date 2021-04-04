@@ -11,7 +11,10 @@ Instalacion
 
 Puedes acceder a phpmyadmin con http://localhost:81/index.php?route=/ o http://192.168.2.4/
 
-El usuario de phpmyadmin es root, no tiene contraseña, hay que importar el fichero sqldata/project.sql a la base de datos project para poblarla.
+El usuario de phpmyadmin es root, no tiene contraseña, y el servidor es 192.168.2.3:3306
+
+Hay que importar el fichero sqldata/project.sql a la base de datos project para poblarla.
+
 
 Hay dos usuarios en la aplicacion
 dummy@user.com - pass: dummyUser
